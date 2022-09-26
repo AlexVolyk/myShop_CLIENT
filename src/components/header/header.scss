@@ -1,0 +1,106 @@
+$list_item_padding: 10px 12px;
+$list_item_font-size: 1.1rem;
+$dark_color: #232323;
+$icons_size: 35px;
+
+header {
+    padding: 20px 0;
+    background: #18920A;
+}
+
+.abi{
+    transition: color 0.3s;
+    &:hover svg {
+        color: lighten($dark_color, 15%);
+        transition: color 0.3s;
+    }
+}
+
+.Header-wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header-right {
+    align-self: center;
+}
+
+.Header-menu {
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+
+.Header-menu>li {
+    padding: $list_item_padding;
+}
+
+.Header-menu-icons svg {
+    width: $icons_size;
+    height: $icons_size;
+    color: $dark_color;
+    transition: color 0.3s;
+
+    &:hover {
+        color: lighten($dark_color, 15%);
+        transition: color 0.3s;
+    }
+
+    // &:hover > .Header-menu-icons-hover > svg {
+    //     color: lighten($dark_color, 15%);
+    //     transition: color 0.3s;
+    // }
+
+
+}
+// .Header-menu-icons:hover {
+//     background-color: red;
+// }
+// .Header-menu-icons 
+// .Header-menu-icons-hover svg {
+//     width: $icons_size;
+//     height: $icons_size;
+//     color: $dark_color;
+//     transition: color 0.3s;
+
+//     &:hover {
+//         color: lighten($dark_color, 15%);
+//         transition: color 0.3s;
+//     }
+// }
+
+.Header-menu-categories-inner {
+    padding: 0 !important;
+    display: contents;
+    position: relative;
+}
+
+.Header-menu-categories-btn {
+    padding: $list_item_padding;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 4px;
+    font-size: $list_item_font-size;
+    font-weight: 500;
+    color: #ededed;
+    background-color: $dark_color;
+    transition: 0.3s background-color;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten($dark_color, 5%);
+        // background-color: rgb(226, 226, 226);
+        transition: 0.3s background-color;
+    }
+
+    &>svg {
+        width: $list_item_font-size;
+        height: $list_item_font-size;
+
+    }
+
+}

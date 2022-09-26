@@ -1,0 +1,16 @@
+.list-inner{
+
+    & > li{
+        padding: 4px 6px;
+        cursor: pointer;
+
+        transition-property: opacity;
+        transition-duration: 0.3s;
+
+        &:hover{
+            opacity: 0.5;
+            transition-property: opacity;
+            transition-duration: 0.3s;
+        }
+    }
+}

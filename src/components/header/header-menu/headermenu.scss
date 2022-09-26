@@ -1,0 +1,58 @@
+$link_font-size: 1.1rem;
+$font_color: #232323;
+$list_item_padding: 10px 12px;
+$list_item_font-size: 1.1rem;
+$dark_color: #232323;
+$icons_size: 35px;
+
+.HeaderMenu {
+    // padding: 15px;
+    // background-color: white;
+}
+
+.HeaderMenu-list {
+    list-style: none;
+    // display: flex;
+}
+
+.HeaderMenu-list-item {
+    list-style: none;
+    
+}
+
+.Header-menu-icons-hover > svg {
+    width: $icons_size;
+    height: $icons_size;
+    color: $dark_color;
+    transition: color 0.3s;
+}
+
+.abi{
+    cursor: pointer;
+
+}
+// .HeaderMenu-list-item:hover .Header-menu-icons-hover svg{
+
+//     &:hover {
+//         color: lighten($dark_color, 15%);
+//         transition: color 0.3s;
+//     }
+// }
+
+.HeaderMenu-list-link {
+    width: 100%;
+    padding: 5px 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: $link_font-size;
+    color: $font_color;
+    background-color: white;
+    transition: color, background-color 0.3s;
+
+    &:hover {
+        background-color: $font_color;
+        color: #1EC687;
+        transition: color, background-color 0.3s;
+
+    }
+}

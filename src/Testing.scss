@@ -1,0 +1,79 @@
+.number-container {
+    display: flex;
+    place-items: center;
+}
+
+.filter-input{
+    width: 70px;
+    padding: 5px 10px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.625);
+    transition: background 0.3s;
+
+    &:hover{
+        background: rgba(255, 255, 255, 0.825);
+        transition: background 0.3s;
+
+    }
+
+    &:focus{
+        outline: none;
+        background-color: white;
+        transition: background 0.3s;
+
+    }
+
+}
+.input-progress-inner {
+    position: relative;
+    height: 15px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.values-dash{
+    width: 8px;
+    height: 3px;
+    margin: 0 10px;
+    background: #514f4c;
+}
+
+.progress {
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    border-radius: 10px;
+
+    background-color: #e7e7e7c4;
+}
+
+.progress-fill {
+    position: absolute;
+    left: 30%;
+    height: 7px;
+    border-radius: 10px;
+    background-color: #1ec687;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    pointer-events: none;
+    background: none;
+}
+
+.slider::-webkit-slider-thumb {
+    cursor: pointer;
+    pointer-events: auto;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+}

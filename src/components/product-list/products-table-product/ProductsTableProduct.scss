@@ -1,0 +1,38 @@
+// $product_name_size: 1.3rem;
+$product_price_size: 1.1rem;
+
+
+.ProductsTable-product{
+    width: 200px;
+    margin: 10px 10px;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+.ProductsTable-product-info{
+    margin-left: 10px;
+    padding: 10px 0;
+}
+
+
+.ProductsTable-product-img{
+    width: 200px;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+// .ProductsTable-name{
+//     font-size: $product_name_size;
+    
+// }
+
+.ProductsTable-price{
+    font-size: $product_price_size;
+
+}

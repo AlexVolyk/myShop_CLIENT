@@ -1,0 +1,21 @@
+.ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navlink{
+    padding: 0 6px;
+    font-size: 1.3rem;
+    color: white;
+}
+
+
+.page-active{
+    color: red;
+}
+
+.arrows_inner > svg {
+    vertical-align: middle;
+}

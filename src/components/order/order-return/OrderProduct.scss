@@ -1,0 +1,54 @@
+.OrderTable-status {
+    width: fit-content;
+    margin-bottom: 10px;
+    padding: 2px 11px;
+    border-radius: 4px;
+    color: red;
+    // position: absolute;
+}
+
+.OrderTable-product-name {
+    font-size: 2rem;
+}
+
+.OrderTable-Products-img-inner {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    // background: #e0e0e0;
+    // background: #e6e6e6;
+    // box-shadow: 20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+    &:hover{
+        opacity: 0.5;
+        transition-property: opacity;
+        transition-duration: 0.3s;
+    }
+
+}
+
+.OrderTable-product-info {
+    margin-left: 40px;
+    align-self: center;
+
+
+    &>p {
+        padding: 5px 0;
+    }
+}
+
+
+// .Order-img-status-block {}
+
+
+.OrderProduct-product_avatar {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
